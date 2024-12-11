@@ -33,7 +33,7 @@ header{
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     background-image: url("../assets/images/img-inicio/desktop-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,10 +71,29 @@ header > .title p{
 }
 
 .main{
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url("../assets/images/letters-red-dr.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+.main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 23, 23, 0.432);
+    backdrop-filter: blur(8px);
+    z-index: 1;
 }
 
 nav{
@@ -107,6 +126,11 @@ nav .enlaces a:hover{
 
 .introduction{
     width: 80%;
+    z-index: 2;
+}
+
+.img-ned{
+    z-index: 2;
 }
 
 .introduction p{
