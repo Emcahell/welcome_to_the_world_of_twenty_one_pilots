@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+        /* #=Colors */
+    --bg-Dark: #231f20;
+    --Yellow: #ffd800;
+    --Red: #d62420;
+    --Blue: #4545dd;
+    --White: #ffffff;
+    --Black: #000000;
+    --Gray: #8080807e;
+        /* #=Fonts */
+    --Roboto: "Roboto", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--Roboto);
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--Black);
+    background: var(--White);
+    overflow-x: hidden;
+}
+
+section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+section .title-main{
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    font-weight: 700;
+}
+
+.eyelashes{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+}
+.eyelashes .eyelash-eras, .eyelash-card-albums{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 70px;
+    padding-top: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.no-active{
+    background-color: var(--Gray);
+}
+
+.active{
+    color: var(--White);
+    background-color: var(--bg-Dark);
+}
+
+.box-albums-and-eras{
+    display: flex;
+    width: 100vw;
+    color: var(--White);
+    background-color: var(--bg-Dark);
+    z-index: -5;
+    transition: .5s ease;
+}
+
+.box-title-eras{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 30px 33px var(--bg-Dark);
+}
+
+.title-eras{
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.box-eras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    flex: 0 0 100%;
+}
+
+.era-vessel-y-top{
+    background-image: url("../assets/images/portadas_y_logos/Twenty_One_Pilots-Vessel-cover.png");
+}
+.era-blurryface{
+    background-image: url("../assets/images/portadas_y_logos/Blurryface-cover.png");
+
+}
+.era-trench{
+    background-image: url("../assets/images/portadas_y_logos/Trench-cover.jpg");
+}
+.era-sai{
+    background-image: url("../assets/images/portadas_y_logos/Scaled-and-icy-cover.jpg");
+}
+.era-clancy{
+    background-image: url("../assets/images/portadas_y_logos/Clancy-cover.png");
+}
+
+.era-vessel-y-top::before,
+.era-blurryface::before,
+.era-trench::before,
+.era-sai::before,
+.era-clancy::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.829);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+}
+
+.era{
+    width: 90%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
+    z-index: -1;   
+}
+
+.era-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.era-title > .title{
+    font-weight: 700;
+    z-index: 2;
+}
+.era-title > img{
+    width: 200px;
+    z-index: 2;
+}
+.era-title .rab{
+    width: 150px;
+    height: 150px;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-indent: 100px;
+}
+
+.contenido div{
+    z-index: 2;
+}
+
+.contenido .img-1, .img-2, .img-3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.contenido .img-3 img{
+    width: 300px;
+}
+
+.contenido p, .contenido div{
+    margin-top: 50px;
+}
+
+.ned{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px;
+    background: var(--bg-Dark);
+}
+
+.box-card-albums{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 0 0 100%;
+    margin-top: 0;
+    padding-top: 100px;
+    background-color: var(--bg-Dark);
+}
+
+.box-title-albums{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+    background: var(--bg-Dark);
+}
+.title-albums{
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--Gray);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.card div{
+    width: 100%;
+}
+
+.card .album-name{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card .little-description{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card .see-tracklist{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    background: var(--Yellow);
+    cursor: pointer;
+}
