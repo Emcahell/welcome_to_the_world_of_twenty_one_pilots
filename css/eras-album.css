@@ -34,7 +34,6 @@ section{
     justify-content: start;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 50px;
 }
 section .title-main{
     text-transform: uppercase;
@@ -230,6 +229,8 @@ section .title-main{
     /* flex-direction: column; */
     flex-wrap: wrap;
     gap: 100px;
+    height: auto;
+    margin-bottom: 200px;
 }
 
 .card{
