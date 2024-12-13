@@ -27,6 +27,21 @@ body{
     overflow-x: hidden;
 }
 
+.lazy-l{
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.lazy-r{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.lazy-l.visible, .lazy-r.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 section{
     position: relative;
     display: flex;
@@ -163,6 +178,10 @@ section .title-main{
 .era-title .rab{
     width: 150px;
     height: 150px;
+}
+
+.radius{
+    border-radius: 20px;
 }
 
 .contenido{

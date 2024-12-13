@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/curiosidades.css">
+    <script src="./js/lazy.js" defer></script>
     <script src="./js/menu.js" defer></script>
     <title>Curiosidades</title>
 </head>
@@ -17,9 +18,7 @@
             </a>
         </div>
         <div class="img-name-top">
-            <a href="./index.html">
                 <img src="./assets/images/img-header/TWENTYONEPILOTS.svg">
-            </a>
         </div>
         <div class="box-icon-menu">
             <button id="btn-open-menu"><svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M4 6l16 0" />  <path d="M4 12l16 0" />  <path d="M4 18l16 0" /></svg></button>
@@ -31,7 +30,9 @@
                     <button id="btn-closed"><svg xmlns="http://www.w3.org/2000/svg" width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M18 6l-12 12" />  <path d="M6 6l12 12" /></svg></button>
                 </div>
                 <div class="img-name-top">
-                    <img src="./assets/images/img-header/TWENTYONEPILOTS.svg">
+                    <a href="./index.html">
+                        <img src="./assets/images/img-header/TWENTYONEPILOTS.svg">
+                    </a>
                 </div>
             </div>
                         <!-- = menu = -->
@@ -63,16 +64,16 @@
 
         <div class="list">
             <ul>
-                <li>¿Sabías que en sus conciertos usan máscaras o pasamontañas? La razón de esto es porque Tyler y Josh quieren que en sus conciertos la gente se sienta identificada con sus canciones, no se trata de cómo se ven, se trata de su música y sus letras.</li>
-                <li>Su canción "Car Radio", del álbum Vessel, surgió de una historia real de Tyler. Un día cuando llegó tarde a la universidad olvidó cerrar la puerta de su auto, cuando volvió le habían robado la radio, al subirse al auto para volver a su casa no le quedó otra que conducir en silencio, ahí fue cuando se dio cuenta de que la música es una distracción perfecta para impedir que nuestra mente vaya a lugares en los que no debería estar.</li>
-                <li>Tyler tuvo una buena infancia, nunca tuvo un historial de haber tenido un comportamiento errático, mas aya de haber sido criado en una familia cristiana. Como dijo en su canción "Lane Boy": "No es necesario ser o haber sido problemático para ser un músico exitoso".</li>
-                <li>Aunque toda banda desea en algún momento de su carrera poder llenar estadios con gente que ame su música, Twenty One Pilots en cambio prefiere dar conciertos pequeños con poca gente, esto es porque ellos prefieren que sus shows sean algo mas íntimo. </li>
-                <li>Una vez se tatuaron el uno al otro en pleno concierto, esto fue porque hicieron una encuesta en twitter en la cual los fans tenían que votar por Tyler o por Josh, el castigo del que tuviera menos votos iba a ser que el ganador le tenía que tatuar su nombre en la pierna. Cuando acabó la encuesta y vieron los resultados ambos integrantes quedaron sorprendidos, habían empatado al 50% a 50%, y los dos tuvieron que tatuar su nombre en la pierna del otro. Y hasta el día de hoy Josh lleva escrito Tyler en su pierna al igual que Tyler tiene escrito Josh en la suya.</li>
-                <li>Tyler tiene canciones cristianas, tres para ser exactos, esto ya que Tyler y Josh asistían a la iglesia Five 14 Church, donde en especial Tyler hizo parte de la banda New Albany con quienes grabó varias canciones netamente cristianas y que fueron parte del EP “5 SONGS”.</li>
-                <li>A Josh le apagaban el microfono cuando hacia coros en la banda House of Heroes.</li>
-                <li>La canción Oh Mr. Believer se trató sobre una ex de Tyler.</li>
-                <li>Tyler no bebe alcohol, según, solo tomo una vez cuando era joven.</li>
-                <li>Tyler es simb.</li>
+                <li class="lazy-li">¿Sabías que en sus conciertos usan máscaras o pasamontañas? La razón de esto es porque Tyler y Josh quieren que en sus conciertos la gente se sienta identificada con sus canciones, no se trata de cómo se ven, se trata de su música y sus letras.</li>
+                <li class="lazy-li">Su canción "Car Radio", del álbum Vessel, surgió de una historia real de Tyler. Un día cuando llegó tarde a la universidad olvidó cerrar la puerta de su auto, cuando volvió le habían robado la radio, al subirse al auto para volver a su casa no le quedó otra que conducir en silencio, ahí fue cuando se dio cuenta de que la música es una distracción perfecta para impedir que nuestra mente vaya a lugares en los que no debería estar.</li>
+                <li class="lazy-li">Tyler tuvo una buena infancia, nunca tuvo un historial de haber tenido un comportamiento errático, mas aya de haber sido criado en una familia cristiana. Como dijo en su canción "Lane Boy": "No es necesario ser o haber sido problemático para ser un músico exitoso".</li>
+                <li class="lazy-li">Aunque toda banda desea en algún momento de su carrera poder llenar estadios con gente que ame su música, Twenty One Pilots en cambio prefiere dar conciertos pequeños con poca gente, esto es porque ellos prefieren que sus shows sean algo mas íntimo. </li>
+                <li class="lazy-li">Una vez se tatuaron el uno al otro en pleno concierto, esto fue porque hicieron una encuesta en twitter en la cual los fans tenían que votar por Tyler o por Josh, el castigo del que tuviera menos votos iba a ser que el ganador le tenía que tatuar su nombre en la pierna. Cuando acabó la encuesta y vieron los resultados ambos integrantes quedaron sorprendidos, habían empatado al 50% a 50%, y los dos tuvieron que tatuar su nombre en la pierna del otro. Y hasta el día de hoy Josh lleva escrito Tyler en su pierna al igual que Tyler tiene escrito Josh en la suya.</li>
+                <li class="lazy-li">Tyler tiene canciones cristianas, tres para ser exactos, esto ya que Tyler y Josh asistían a la iglesia Five 14 Church, donde en especial Tyler hizo parte de la banda New Albany con quienes grabó varias canciones netamente cristianas y que fueron parte del EP “5 SONGS”.</li>
+                <li class="lazy-li">A Josh le apagaban el microfono cuando hacia coros en la banda House of Heroes.</li>
+                <li class="lazy-li">La canción Oh Mr. Believer se trató sobre una ex de Tyler.</li>
+                <li class="lazy-li">Tyler no bebe alcohol, según, solo tomo una vez cuando era joven.</li>
+                <li class="lazy-li">Tyler es simb.</li>
             </ul>
         </div>
 

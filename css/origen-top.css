@@ -31,6 +31,21 @@ body{
     overflow-x: hidden;
 }
 
+.lazy-l{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.lazy-r{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.lazy-l.visible, .lazy-r.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .box-title{
     display: flex;
     justify-content: center;
@@ -102,6 +117,10 @@ body{
 }
 .bands-history .img-4 img{
     width: 400px;
+}
+
+.radius{
+    border-radius: 20px;
 }
 
 .note{
