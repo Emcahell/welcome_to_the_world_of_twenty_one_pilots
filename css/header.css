@@ -25,7 +25,8 @@ body{
 }
 
 header{
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,6 +36,12 @@ header{
     background-image: url("../assets/images/img-header/img-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 0.2s linear 0.2s;
+    z-index: 100;
+}
+
+.headerOff{
+    transform: translateY(-100px);
 }
 
 .img-logo-header img{
