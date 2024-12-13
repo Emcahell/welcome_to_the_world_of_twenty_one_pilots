@@ -1,0 +1,89 @@
+@media (max-width: 500px) {
+
+    body{
+        width: 100%;
+        font-size: 1rem;
+        overflow-x: hidden;
+    }
+
+    .title-main{
+        width: 70%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .eyelashes .eyelash-eras, .eyelash-card-albums{
+        width: 40%;
+        height: 50px;
+        padding-top: 10px;
+    }
+    .box-albums-and-eras{
+        width: 100%;
+    }
+    .box-title-eras{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 90%;
+        margin-bottom: -8px;
+        z-index: 100;
+    } 
+    .title-eras{
+        width: 100%;
+        padding-bottom: 30px;
+        text-align: center;
+        font-weight: 700;
+    }
+    .box-eras{
+        width: 100%;
+        padding-top: 100px;
+    }
+    .era{
+        padding-right: 0;
+        padding-left: 10%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .era-title{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .era-title > .title{
+        width: 70%;
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 40px;
+    }
+    .era-vessel-y-top > .era-title > img{
+        width: 60px;
+        height: 60px;
+        margin-left: 30px;
+    }
+    .era-title > img{
+        width: 100px;
+        margin-left: 30px;
+    }
+    
+    .contenido{
+        line-height: 30px;
+        text-indent: 30px;
+    }
+
+    .contenido .img-1 img{
+        width: 300px;
+    }
+
+    .ned{
+        width: 100%;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        background: var(--bg-Dark);
+    }
+
+    .box-card-albums::before{
+        width: 100%;
+        height: 100%;
+    }
+    
+}

@@ -134,3 +134,15 @@ header{
     width: 53px !important;
     height: 49px;
 }
+
+@media (max-width: 500px) {
+    .img-name-top img{
+        width: 170px;
+    }
+    .img-logo-header img{
+        width: 40px;
+    }
+    .header-menu .img-name-top img{
+        width: 170px;
+    }
+}

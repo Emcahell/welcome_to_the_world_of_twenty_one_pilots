@@ -92,8 +92,12 @@ section .title-main{
     width: 100vw;
     color: var(--White);
     background-color: var(--bg-Dark);
-    z-index: -5;
+    /* z-index: -5; */
     transition: .5s ease;
+}
+
+.box-eras{
+    z-index: 30;
 }
 
 .box-title-eras{
@@ -146,6 +150,7 @@ section .title-main{
     left: 0;
     width: 100%;
     height: 100%;
+    /* padding-right: 5px; */
     background-color: rgba(17, 17, 17, 0.829);
     backdrop-filter: blur(8px);
     z-index: 1;
@@ -158,6 +163,7 @@ section .title-main{
     background-position: center;
     background-size: cover;
     padding: 10%;
+    padding-right: 0;
     z-index: -1;   
 }
 
@@ -219,6 +225,7 @@ section .title-main{
 }
 
 .box-card-albums{
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -226,6 +233,17 @@ section .title-main{
     margin-top: 0;
     padding-top: 100px;
     background-color: var(--bg-Dark);
+}
+.box-card-albums::before{
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.473);
+    backdrop-filter: blur(8px);
 }
 
 .box-title-albums{
@@ -239,6 +257,7 @@ section .title-main{
     margin-bottom: 50px;
     font-weight: 700;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .cards{
@@ -248,7 +267,6 @@ section .title-main{
     /* flex-direction: column; */
     flex-wrap: wrap;
     gap: 100px;
-    height: auto;
     margin-bottom: 200px;
 }
 
@@ -259,6 +277,7 @@ section .title-main{
     flex-direction: column;
     width: 320px;
     padding: 20px;
+    border: 2px solid var(--Black);
     border-radius: 20px;
     background: var(--Gray);
 }
@@ -283,7 +302,7 @@ section .title-main{
     margin-bottom: 20px;
 }
 
-.card .see-tracklist{
+.card button{
     width: 100%;
     padding: 10px;
     border: none;
@@ -291,4 +310,52 @@ section .title-main{
     font-weight: 700;
     background: var(--Yellow);
     cursor: pointer;
+}
+
+.tracklist{
+    position: absolute;
+    left: 36vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 340px !important;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: var(--Black);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: .7s ease;
+    z-index: 1;
+}
+.tracklist.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tracklist > .closed{
+    cursor: pointer;
+}
+
+.tracklist > .tracklist-title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Yellow);
+}
+
+.tracklist > .tracklist-list{
+    width: 60%;
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+.none{
+    display: none;
 }

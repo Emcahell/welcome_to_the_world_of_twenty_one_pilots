@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/eras-album.css">
+    <link rel="stylesheet" href="./css/media-querys.css/mq-eras-album.css">
     <script src="./js/lazy.js" defer></script>
     <script src="./js/menu.js" defer></script>
     <script src="./js/tabs.js" defer></script>
+    <script src="./js/modal-cards.js" defer></script>
     <title>Eras y Álbumes</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
                     <img src="./assets/images/img-header/TWENTYONEPILOTS.svg">
             </div>
             <div class="box-icon-menu">
-                <button id="btn-open-menu"><svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M4 6l16 0" />  <path d="M4 12l16 0" />  <path d="M4 18l16 0" /></svg></button>
+                <button id="btn-open-menu"><svg  xmlns="http://www.w3.org/2000/svg"  width="42"  height="47"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M4 6l16 0" />  <path d="M4 12l16 0" />  <path d="M4 18l16 0" /></svg></button>
             </div>
         
             <div class="menu" id="menu">
@@ -293,66 +295,227 @@
             </div>
             
             <div class="box-card-albums">
-                <div class="cards" id="cards-album">
+                <div class="cards">
 
                     <div class="box-title-albums">
                         <p class="title-albums">Álbumes de Twenty One Pilots.</p>
                     </div>
 
-                    <div class="card card-clancy">
+                    <div class="card card-clancy" id="card1">
                         <img src="./assets/images/portadas_y_logos/Clancy-cover.png">
                         <div>
                             <p class="album-name">Clancy</p>
                             <p class="little-description">24 de mayo de 2024</p>
-                            <button class="see-tracklist">Ver TrackList</button>
+                            <button class="open-modal" data-modal="modal1">Ver TrackList</button>
+                        </div>
+                        <div class="tracklist" id="modal1">
+                            <div class="tracklist-title">
+                                <p class="name">Clancy</p>
+                                <svg class="closed" xmlns="http://www.w3.org/2000/svg" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M18 6l-12 12" />  <path d="M6 6l12 12" /></svg>
+                            </div>
+                            <div class="tracklist-list">
+                                <ol>
+                                    <li>Overcompensate</li>
+                                    <li>Next Semester</li>
+                                    <li>Backslide</li>
+                                    <li>Midwest Indigo</li>
+                                    <li>Routines In The Night</li>
+                                    <li>Vignette</li>
+                                    <li>The Craving</li>
+                                    <li>Lavish</li>
+                                    <li>Navigating</li>
+                                    <li>Snap Back</li>
+                                    <li>Oldies Station</li>
+                                    <li>At The Risk Of Feeling Dumb</li>
+                                    <li>Paladin Strait</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card-sai">
+                    <div class="card card-sai" id="card2">
                         <img src="./assets/images/portadas_y_logos/Scaled-and-icy-cover.jpg">
                         <div>
                             <p class="album-name">Scaled And Icy</p>
                             <p class="little-description">21 de mayo de 2021</p>
-                            <button class="see-tracklist">Ver TrackList</button>
+                            <button class="open-modal" data-modal="modal2">Ver TrackList</button>
+                        </div>
+                        <div class="tracklist" id="modal2">
+                            <div class="tracklist-title">
+                                <p class="name">Scaled And Icy</p>
+                                <svg class="closed" xmlns="http://www.w3.org/2000/svg" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M18 6l-12 12" />  <path d="M6 6l12 12" /></svg>
+                            </div>
+                            <div class="tracklist-list">
+                                <ol>
+                                    <li>Good Day</li>
+                                    <li>Choker</li>
+                                    <li>Shy Away</li>
+                                    <li>The Outside</li>
+                                    <li>Saturday</li>
+                                    <li>Never Take It</li>
+                                    <li>Mulberry Street</li>
+                                    <li>formidable</li>
+                                    <li>Brounce Man</li>
+                                    <li>No Chances</li>
+                                    <li>Redecorate</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card-trench">
+                    <div class="card card-trench" id="card3">
                         <img src="./assets/images/portadas_y_logos/Trench-cover.jpg">
                         <div>
                             <p class="album-name">Trench</p>
                             <p class="little-description">5 de octubre de 2018</p>
-                            <button class="see-tracklist">Ver TrackList</button>
+                            <button class="open-modal" data-modal="modal3">Ver TrackList</button>
+                        </div>
+                        <div class="tracklist" id="modal3">
+                            <div class="tracklist-title">
+                                <p class="name">Trench</p>
+                                <svg class="closed" xmlns="http://www.w3.org/2000/svg" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M18 6l-12 12" />  <path d="M6 6l12 12" /></svg>
+                            </div>
+                            <div class="tracklist-list">
+                                <ol>
+                                    <li>Jumpsuit</li>
+                                    <li>Levitate</li>
+                                    <li>Morph</li>
+                                    <li>My Blood</li>
+                                    <li>Chlorine</li>
+                                    <li>Smithereens</li>
+                                    <li>Neon Gravestones</li>
+                                    <li>The Hype</li>
+                                    <li>Nico And The Niners</li>
+                                    <li>Cut My Lip</li>
+                                    <li>Bandito</li>
+                                    <li>Pet Cheetah</li>
+                                    <li>Legend</li>
+                                    <li>Leave The City</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card-blurryface">
+                    <div class="card card-blurryface" id="card4">
                         <img src="./assets/images/portadas_y_logos/Blurryface-cover.png">
                         <div>
                             <p class="album-name">Blurryface</p>
                             <p class="little-description">17 de mayo de 2015</p>
-                            <button class="see-tracklist">Ver TrackList</button>
+                            <button class="open-modal" data-modal="modal4">Ver TrackList</button>
+                        </div>
+                        <div class="tracklist" id="modal4">
+                            <div class="tracklist-title">
+                                <p class="name">Blurryface</p>
+                                <svg class="closed" xmlns="http://www.w3.org/2000/svg" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M18 6l-12 12" />  <path d="M6 6l12 12" /></svg>
+                            </div>
+                            <div class="tracklist-list">
+                                <ol>
+                                    <li>Heavydirtysoul</li>
+                                    <li>Stressed Out</li>
+                                    <li>Ride</li>
+                                    <li>Fairly Local</li>
+                                    <li>Tear In My Heart</li>
+                                    <li>Lane Boy</li>
+                                    <li>The Judge</li>
+                                    <li>Doubt</li>
+                                    <li>Polarize</li>
+                                    <li>We Don't Believe What's on TV</li>
+                                    <li>Message Man</li>
+                                    <li>Hometown</li>
+                                    <li>Not Today</li>
+                                    <li>Goner</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card-vessel">
+                    <div class="card card-vessel" id="card5">
                         <img src="./assets/images/portadas_y_logos/Twenty_One_Pilots-Vessel-cover.png">
                         <div>
                             <p class="album-name">Vessel</p>
                             <p class="little-description">8 de enero de 2013</p>
-                            <button class="see-tracklist">Ver TrackList</button>
+                            <button class="open-modal" data-modal="modal5">Ver TrackList</button>
+                        </div>
+                        <div class="tracklist" id="modal5">
+                            <div class="tracklist-title">
+                                <p class="name">Vessel</p>
+                                <svg class="closed" xmlns="http://www.w3.org/2000/svg" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M18 6l-12 12" />  <path d="M6 6l12 12" /></svg>
+                            </div>
+                            <div class="tracklist-list">
+                                <ol>
+                                    <li>Ode to Sleep</li>
+                                    <li>Holding on to You</li>
+                                    <li>Migraine</li>
+                                    <li>House of Gold</li>
+                                    <li>Car Radio</li>
+                                    <li>Semi-Automatic</li>
+                                    <li>Screen</li>
+                                    <li>The Run and Go</li>
+                                    <li>Fake You Out</li>
+                                    <li> Guns for Hands</li>
+                                    <li>Trees</li>
+                                    <li>Truce</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card-top">
+                    <div class="card card-top" id="card6">
                         <img src="./assets/images/portadas_y_logos/twenty-one-pilots-homonimo-cover.jpg">
                         <div>
                             <p class="album-name">Twenty One Pilots</p>
                             <p class="little-description">29 de diciembre de 2009</p>
-                            <button class="see-tracklist">Ver TrackList</button>
+                            <button class="open-modal" data-modal="modal6">Ver TrackList</button>
+                        </div>
+                        <div class="tracklist" id="modal6">
+                            <div class="tracklist-title">
+                                <p class="name">Twenty One Pilots</p>
+                                <svg class="closed" xmlns="http://www.w3.org/2000/svg" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M18 6l-12 12" />  <path d="M6 6l12 12" /></svg>
+                            </div>
+                            <div class="tracklist-list">
+                                <ol>
+                                    <li>Implicit Demand For Proof</li>
+                                    <li>Fall Away</li>
+                                    <li>The Pantaloon</li>
+                                    <li>Addict Width A Pen</li>
+                                    <li>Friend, Please.</li>
+                                    <li>March To The Sea</li>
+                                    <li>Johnny Boy</li>
+                                    <li>Oh Ms. Believer</li>
+                                    <li>Trapdoor</li>
+                                    <li>A Car, A Torch, A Death</li>
+                                    <li>Taxi Cab</li>
+                                    <li>Before You Start Your Day</li>
+                                    <li>Isle Of Flightless Birds</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card-rab">
+                    <div class="card card-rab" id="card7">
                         <img src="./assets/images/portadas_y_logos/Regional-At-Best-cover.jpg">
                         <div>
                             <p class="album-name">Regional At Best</p>
                             <p class="little-description">8 de julio de 2011</p>
-                            <button class="see-tracklist">Ver TrackList</button>
+                            <button class="open-modal" data-modal="modal7">Ver TrackList</button>
+                        </div>
+                        <div class="tracklist" id="modal7">
+                            <div class="tracklist-title">
+                                <p class="name">Regional At Best</p>
+                                <svg class="closed" xmlns="http://www.w3.org/2000/svg" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <path d="M18 6l-12 12" />  <path d="M6 6l12 12" /></svg>
+                            </div>
+                            <div class="tracklist-list">
+                                <ol>
+                                    <li>Guns for Hands</li>
+                                    <li>Holding on to You</li>
+                                    <li>Ode to Sleep</li>
+                                    <li>Slowtown</li>
+                                    <li>Car Radio</li>
+                                    <li>Forest</li>
+                                    <li>Glowing Eyes</li>
+                                    <li>Kitchen Sink</li>
+                                    <li>Anathema</li>
+                                    <li>Lovely</li>
+                                    <li>Ruby</li>
+                                    <li>Trees</li>
+                                    <li>Be Concerned</li>
+                                    <li>Clear</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
 
@@ -368,6 +531,6 @@
         <div class="ned">
             <img src="./assets/images/img-inicio/ned200w.gif">
         </div>
-    
+
 </body>
 </html>
