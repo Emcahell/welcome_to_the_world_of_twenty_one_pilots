@@ -169,11 +169,15 @@ footer{
 }
 
 .made{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
     font-size: 21px;
 }
 .made svg{
     color: var(--Red);
+    margin: 10px;
 }
 
 .creators{
@@ -184,10 +188,12 @@ footer{
 }
 .creators .info{
     display: flex;
+    align-items: center;
     margin-bottom: 10px;
 }
 .info div{
     display: flex;
+    align-items: center;
 }
 
 .info a svg{
@@ -201,4 +207,16 @@ footer{
 
 .referencias{
     display: flex;
+}
+
+.madein{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.madein img{
+    margin: 10px;
+    width: 30px;
 }
