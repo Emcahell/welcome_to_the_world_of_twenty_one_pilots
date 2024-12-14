@@ -1,0 +1,65 @@
+@media (max-width: 600px) {
+
+    body{
+        font-size: 1rem;
+    }
+
+    .box-title{
+        width: 90%;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+    .box-title p{
+        line-height: 30px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .box-title img{
+        width: 300px;
+        border-radius: 10px;
+    }
+    .bands-history p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bands-history .title, .box-tyj .title{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .bands-history p, .integrantes-history p{
+        text-indent: 25px;
+        line-height: 30px;
+    }
+    .bands-history img{
+        width: 300px;
+    }
+    .bands-history .img-1 img, .bands-history .img-3 img{
+        width: 200px;
+    }
+    .bands-history .img-4 img{
+        width: 70%;
+    }
+    .integrantes-history .titleone .title{
+        text-align: center;
+        font-weight: 700;
+    }
+    .box-tyj .info-intro img{
+        width: 250px;
+        border-radius: 10px;
+    }    
+
+    .none{
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .bands-history .img-2 img, .bands-history .dos img{
+        width: 130px;
+    }
+    .box-tyj .info-intro img{
+        width: 200px;
+    }
+}
