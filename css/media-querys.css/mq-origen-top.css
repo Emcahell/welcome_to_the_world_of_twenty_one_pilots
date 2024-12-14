@@ -27,6 +27,8 @@
     .bands-history .title, .box-tyj .title{
         font-size: 18px;
         font-weight: 700;
+        text-indent: 25px;
+        text-align: left !important;
     }
     .bands-history p, .integrantes-history p{
         text-indent: 25px;

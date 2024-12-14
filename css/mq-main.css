@@ -1,0 +1,95 @@
+@media (max-width: 640px) {
+    body{
+        font-size: 1rem;
+    }
+
+    header{
+        background-image: url("../assets/images/img-inicio/mobile-header.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    header > .title p{
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    header > .title img{
+        width: 80%;
+    }
+
+    .box-img-boys img{
+        bottom: -350px;
+        width: 60%;
+        mask-image: linear-gradient(
+            black 80%,
+            transparent
+        );
+    }
+
+    nav .enlaces a{
+        font-size: 18px;
+    }
+
+    .introduction p{
+        text-indent: 25px;
+        margin-bottom: 40px;
+    }
+    .introduction p .top{
+        font-size: 30px;
+    }
+
+    .info-footer{
+        width: 90%;
+    }
+    .info-footer p{
+        text-align: center;
+    }
+
+    .referencias{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    .none{
+        display: none;
+    }   
+}
+
+@media (max-width: 500px) {
+    nav{
+        position: absolute;
+        bottom: 0;
+        height: 200px;
+    }
+    nav .enlaces{
+        padding-top: 40px;
+    }
+    .box-img-boys img{
+        bottom: -250px;
+        width: 60%;
+}
+}
+
+@media (max-width: 400px) {
+
+    header > .title{
+        margin-top: 50px;
+    }
+    header > .title p{
+        margin-top: 20px;
+        font-size: 26px;
+    }
+    nav{
+        height: 200px;
+    }
+    nav .enlaces{
+        padding-top: 45px;
+    }
+    .box-img-boys img{
+        bottom: -300px;
+        width: 80%;
+}
+}

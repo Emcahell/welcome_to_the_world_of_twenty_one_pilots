@@ -12,6 +12,9 @@
         text-indent: 25px;
     }
     section .img-s img{
-        width: 300px;
+        width: 270px;
+    }
+    section .img-ss img{
+        width: 240px;
     }
 }
