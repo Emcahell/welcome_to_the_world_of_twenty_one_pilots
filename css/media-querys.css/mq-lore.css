@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+    body{
+        font-size: 1rem;
+    }
+
+    section .title p{
+        margin-top: 70px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    section div p{
+        text-indent: 25px;
+    }
+    section .img-s img{
+        width: 300px;
+    }
+}
