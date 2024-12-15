@@ -100,10 +100,6 @@ section .title-main{
     transition: .5s ease;
 }
 
-.box-eras{
-    z-index: 30;
-}
-
 .box-title-eras{
     display: flex;
     justify-content: center;
@@ -124,6 +120,7 @@ section .title-main{
     flex-direction: column;
     padding-top: 100px;
     flex: 0 0 100%;
+    z-index: 30;
 }
 
 .era-vessel-y-top{
@@ -161,8 +158,12 @@ section .title-main{
 }
 
 .era{
-    width: 90%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -218,6 +219,7 @@ section .title-main{
 
 .contenido p, .contenido div{
     margin-top: 50px;
+    padding-right: 20px;
 }
 
 .ned{
