@@ -98,6 +98,11 @@
     .title-albums{
         margin-bottom: 5px;
     }
-    
+    .card .album-name{
+        font-size: 30px;
+    }
+    .card .little-description{
+        font-size: 16px;
+    }
     
 }
