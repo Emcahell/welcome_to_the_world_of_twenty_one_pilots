@@ -66,6 +66,7 @@ section .title-main{
     align-items: flex-end;
     width: 100%;
     height: 100px;
+    z-index: 5;
 }
 .eyelashes .eyelash-eras, .eyelash-card-albums{
     display: flex;
@@ -240,17 +241,6 @@ section .title-main{
     padding-top: 100px;
     background-color: var(--bg-Dark);
 }
-.box-card-albums::before{
-    display: none;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    background-color: rgba(17, 17, 17, 0.473);
-    backdrop-filter: blur(8px);
-}
 
 .box-title-albums{
     display: flex;
@@ -320,7 +310,6 @@ section .title-main{
 
 .tracklist{
     position: absolute;
-    left: 36vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,11 +322,12 @@ section .title-main{
     opacity: 0;
     transform: translateY(-100%);
     transition: .7s ease;
-    z-index: 1;
+    z-index: -5;
 }
 .tracklist.active{
     opacity: 1;
     transform: translateY(0);
+    z-index: 1;
 }
 
 .tracklist > .closed{
