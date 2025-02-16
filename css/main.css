@@ -91,7 +91,7 @@ header > .title p{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(63, 23, 23, 0.432);
+    background-color: rgba(37, 14, 14, 0.712);
     backdrop-filter: blur(8px);
     z-index: 1;
 }
